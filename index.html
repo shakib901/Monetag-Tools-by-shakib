@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- LibTL Ad SDK -->
-    <script src='//libtl.com/sdk.js' data-zone='10551429' data-sdk='show_10551429' async></script>
+<script src='//libtl.com/sdk.js' data-zone='10587708' data-sdk='show_10587708'></script>
     
     <style>
         body {
@@ -187,14 +187,14 @@
                 return;
             }
             
-            if (typeof show_10551429 !== 'function') {
+            if (typeof show_10587708 !== 'function') {
                 alert('Ad SDK loading... Try again in a few seconds.');
                 return;
             }
             
             Telegram.WebApp.HapticFeedback.impactOccurred('heavy');
             
-            const adPromise = type === 'pop' ? show_10551429('pop') : show_10551429();
+            const adPromise = type === 'pop' ? show_10587708('pop') : show_10587708();
             
             adPromise
                 .then(() => {
